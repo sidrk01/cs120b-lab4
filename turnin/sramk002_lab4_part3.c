@@ -110,7 +110,7 @@ int main(void) {
 //        DDRC = 0xFF; PORTC = 0x00;
     /* Insert your solution below */
 
-KeyPad_State = SM_Start;
+KeyPad_State = SMStart;
     while (1) {
         TickFct();
     }
