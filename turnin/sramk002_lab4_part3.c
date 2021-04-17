@@ -77,7 +77,7 @@ void TickFct(){
     //    PORTC = 0x00;
         break;
          
-        case Wait
+      case Wait:
    //     PORTC = 0x01;
         PORTB = 0x00;
         break;
@@ -95,7 +95,7 @@ void TickFct(){
         case Y_Press:
   //      PORTC = 0x04;
         PORTB = 0x00;
-        break
+        break;
 
         case Y_Wait:
  //       PORTC = 0x05;
