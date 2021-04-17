@@ -74,30 +74,31 @@ void TickFct(){
 
    switch (KeyPad_State){
         case SMStart:
-        PORTC = 0x00;
-
+    //    PORTC = 0x00;
+        break;
+         
         case Wait
-        PORTC = 0x01;
+   //     PORTC = 0x01;
         PORTB = 0x00;
         break;
 
         case Pound_Press:
-        PORTC = 0x02;
+  //      PORTC = 0x02;
         PORTB = 0x00;
         break;
 
         case Pound_Wait:
-        PORTC = 0x03;
+  //      PORTC = 0x03;
         PORTB = 0x00;
         break;
 
         case Y_Press:
-        PORTC = 0x04;
+  //      PORTC = 0x04;
         PORTB = 0x00;
         break
 
         case Y_Wait:
-        PORTC = 0x05;
+ //       PORTC = 0x05;
         PORTB = 0x01;
         break;
    }
@@ -106,7 +107,7 @@ int main(void) {
     /* Insert DDR and PORT initializations */
         DDRA = 0x00; PORTA = 0xFF;
         DDRB = 0xFF; PORTB = 0x00;
-        DDRC = 0xFF; PORTC = 0x00;
+//        DDRC = 0xFF; PORTC = 0x00;
     /* Insert your solution below */
 
 KeyPad_State = SM_Start;
